@@ -1,17 +1,42 @@
-# amril_m5
+# Employee Directory App (Tugas)
 
-A new Flutter project.
+Proyek ini adalah aplikasi direktori profil karyawan yang dibangun menggunakan Flutter. Aplikasi ini mencakup desain modern layaknya brosur bisnis (Business Flyer) yang rapi dan profesional, lengkap dengan efek interaktif.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Panduan Setup Project
 
-A few resources to get you started if this is your first Flutter project:
+1. **Buat Repository**
+   Buka github dan add repository
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+2. **Create New Flutter project**
+   Pastikan Anda sudah menginstal [Flutter SDK]
+   Lalu pencet ctrl+shift+p dan pilih Flutter: New Project
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Perintah untuk Menjalankan Server Lokal (Aplikasi)
+
+- **Menjalankan di Browser (Chrome Web):**
+  ```bash
+  flutter run -d chrome
+  ```
+
+---
+
+## Cara Melakukan Import Database MySQL
+
+1. **Nyalakan Server Database**
+   Buka aplikasi **Laragon** (atau sejenisnya), kemudian klik Start.
+2. **Buka phpMyAdmin**
+   Buka browser Anda dan akses `http://localhost/phpmyadmin`.
+3. **Proses Import**
+   - Pada bagian _File to import_, klik tombol **Choose File** (Pilih File).
+   - Cari file ekstensi `.sql` yang telah disediakan.
+   - Gulir ke paling bawah halaman, kemudian klik tombol **Import** atau **Go**.
+4. **Sesuaikan Konfigurasi**
+   Pastikan kredensial koneksi di script backend Anda sudah menggunakan detail lokal:
+   - Host: `localhost`
+   - User: `root`
+   - Password: `(kosong)`
+   - DB Name: `db_amril_tugas`
